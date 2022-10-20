@@ -1,0 +1,269 @@
+/* stylelint-disable no-descending-specificity */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #9e9d8b;
+  width: 60px;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
+      display: block;
+      margin: 4px auto;
+      width: 34px;
+      height: auto;
+
+      &.sub-logo {
+        width: 50px;
+      }
+
+      &.sub-logo-green {
+        width: 50px;
+        display: none;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 70vh;
+    width: 100%;
+
+    a {
+      font-size: 22px;
+      color: #fff;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &::after {
+        content: "";
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #fff;
+
+        svg {
+          opacity: 0;
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+
+    a.home-link {
+      &::after {
+        content: "HOME";
+      }
+    }
+
+    a.about-link {
+      &::after {
+        content: "ABOUT";
+      }
+    }
+
+    a.skills-link {
+      &::after {
+        content: "SKILLS";
+      }
+    }
+
+    a.contact-link {
+      &::after {
+        content: "CONTACT";
+        font-size: 7px;
+      }
+    }
+
+    a.portfolio-link {
+      &::after {
+        content: "MY WORK";
+        font-size: 7px;
+      }
+    }
+
+    a.active {
+      svg {
+        color: #e5e6ea;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      bottom: 0;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+
+      li {
+        height: 40px;
+
+        a {
+          padding: 7px 0;
+          display: block;
+          height: 30%;
+          font-size: 15px;
+          line-height: 16px;
+
+          &:hover {
+            svg {
+              opacity: 1;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hamburger-icon,
+.close-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    nav {
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: #9e9d8b;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 2;
+      margin: 0;
+      padding: 100px 15px;
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+
+      ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+        li {
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4d4d4e;
+
+        &:hover {
+          svg {
+            opacity: 0;
+            color: #fff;
+          }
+        }
+      }
+
+      a.contact-link {
+        &::after {
+          font-size: 9px;
+        }
+      }
+
+      a.portfolio-link {
+        &::after {
+          font-size: 9px;
+        }
+      }
+
+      a.active {
+        color: #e5e6ea;
+      }
+
+      a::after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10px;
+      }
+
+      &.mobile-show {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        height: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    .hamburger-icon,
+    .close-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+
+    .close-icon {
+      color: #4d4d4e;
+      right: 45px;
+    }
+
+    .logo {
+      img {
+        &.sub-logo {
+          display: none;
+        }
+
+        &.sub-logo-green {
+          display: block;
+        }
+      }
+    }
+  }
+}
