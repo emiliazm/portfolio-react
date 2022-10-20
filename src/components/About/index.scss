@@ -1,0 +1,35 @@
+.font-color {
+  color: #73a299;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.photo-container {
+  opacity: 0.5;
+
+  img {
+    display: block;
+    width: 450px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+  }
+
+  .photo1 {
+    z-index: 1;
+
+    &:hover {
+      opacity: 0;
+      transition: opacity 1s;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .photo-container {
+    img {
+      display: none;
+    }
+  }
+}

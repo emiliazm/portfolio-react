@@ -1,0 +1,23 @@
+.globe-container {
+  z-index: 0;
+  width: 400px;
+  height: 570px;
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  right: 170px;
+  margin: auto;
+  opacity: 0;
+
+  .globe-logo {
+    width: 110%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(0deg) !important;
+  }
+}
+
+.svg-globe-container {
+  stroke: #9e958b;
+  stroke-width: 50px;
+}

@@ -1,0 +1,20 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
+  background: #fff;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
+}

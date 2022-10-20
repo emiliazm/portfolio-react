@@ -1,0 +1,128 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #9e958b;
+    font-size: 53px;
+    margin: 0;
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', sans-serif;
+      color: #9e958b;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -30px;
+      left: 5px;
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore', sans-serif;
+      color: #9e958b;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 40px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
+
+    img {
+      width: 42px;
+      margin-left: 20px;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1.4s;
+      position: relative;
+      bottom: -6px;
+      right: -2px;
+    }
+  }
+}
+
+h2 {
+  color: #8d8d8d;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  animation: fadeIn 1s 1.8s backwards;
+}
+
+.flat-button {
+  color: #9e958b;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #9e958b;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
+
+  &:hover {
+    background: #9e958b;
+    color: #333;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1::before,
+  .home-page h1::after {
+    display: none;
+  }
+
+  .home-page {
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 125px;
+    }
+
+    .logo-container {
+      position: relative;
+      width: 200px;
+      height: auto;
+      top: 20px;
+      left: -50px;
+      right: 0;
+      box-sizing: border-box;
+      margin: auto;
+
+      svg {
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+      }
+    }
+  }
+}

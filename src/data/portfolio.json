@@ -1,0 +1,46 @@
+{
+  "portfolio": [
+
+    {
+      "cover": "/portfolio/bookit.png",
+      "title": "Book.it web app",
+      "description": "Ruby on rails",
+      "url": "https://bookit-api-be.herokuapp.com/api-docs/index.html"
+    },
+
+    {
+      "cover": "/portfolio/budget.png",
+      "title": "Budget web app",
+      "description": "Ruby on rails",
+      "url": "https://tranquil-oasis-26787.herokuapp.com/"
+    },
+
+    {
+      "cover": "/portfolio/bookstore.png",
+      "title": "Bookstore",
+      "description": "React & Redux",
+      "url": "https://emiliazm.github.io/bookstore/"
+    },
+
+    {
+      "cover": "/portfolio/ruby.png",
+      "title": "Ruby project",
+      "description": "Ruby",
+      "url": "https://github.com/aliveGUY/ruby_capstone"
+    },
+
+    {
+      "cover": "/portfolio/metric.png",
+      "title": "Metrics web app",
+      "description": "React and Redux",
+      "url": "https://emiliazm.github.io/metrics-webapp/"
+    },
+
+    {
+      "cover": "/portfolio/filmer.png",
+      "title": "Filmer app",
+      "description": "HTML, CSS & JS",
+      "url": "https://emiliazm.github.io/webapp/"
+    }
+  ]
+}
