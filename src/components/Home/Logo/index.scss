@@ -1,32 +1,33 @@
 .logo-container {
-  z-index: 0;
-  width: 400px;
-  height: 600px;
   position: absolute;
-  top: -90px;
-  bottom: 0;
-  left: 500px;
+  bottom: 550px;
+  left: 700px;
   margin: auto;
-  opacity: 0;
+  transform: rotateZ(30deg) !important;
 
-  svg {
-    width: 150%;
+  .e-container,
+  .solid-logo {
+    width: 500px;
     height: auto;
-    bottom: 0;
-    transform: rotateZ(30deg) !important;
+    position: absolute;
+  }
+
+  .e-container {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 5000;
+    animation: animationWorld 15s ease-in forwards;
   }
 
   .solid-logo {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-    width: 150%;
-    opacity: 0;
-    transform: rotateZ(30deg);
-    z-index: 1;
+    opacity: 1;
+    z-index: 5;
+    animation: fadeIn 6s 3.8s backwards;
+  }
+}
+
+@keyframes animationWorld {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
