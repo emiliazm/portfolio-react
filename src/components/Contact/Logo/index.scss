@@ -1,19 +1,17 @@
 .globe-container {
-  z-index: 0;
-  width: 400px;
-  height: 570px;
+  height: 100%;
   position: absolute;
-  top: 120px;
-  bottom: 0;
-  right: 170px;
+  top: -30px;
+  right: 110px;
   margin: auto;
-  opacity: 0;
+  stroke-dasharray: 115000;
+  stroke-dashoffset: 115000;
+  animation: animationWorld 12s ease-in forwards;
+}
 
-  .globe-logo {
-    width: 110%;
-    height: auto;
-    bottom: 0;
-    transform: rotateZ(0deg) !important;
+@keyframes animationWorld {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 

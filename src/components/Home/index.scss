@@ -107,21 +107,18 @@ h2 {
 
     .logo-container {
       position: relative;
-      width: 200px;
+      width: 50px;
       height: auto;
-      top: 20px;
+      top: 0;
       left: -50px;
       right: 0;
       box-sizing: border-box;
       margin: auto;
 
-      svg {
+      .e-container,
+      .solid-logo {
         position: absolute;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: 0;
-        margin: auto;
+        width: 300px;
       }
     }
   }
