@@ -17,8 +17,9 @@ const Portfolio = () => {
   const renderPortfolio = (portfolio) => (
     <div className="images-container">
       {
-          portfolio.map((port) => (
-            <div className="image-box" key={port}>
+          portfolio.map((port, idx) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <div className="image-box" key={idx}>
               <img
                 src={port.cover}
                 className="portfolio-image"
@@ -26,14 +27,24 @@ const Portfolio = () => {
               />
               <div className="content">
                 <p className="title">{port.title}</p>
-                <h4 className="description">{port.description}</h4>
-                <button
-                  type="button"
-                  className="btn"
-                  onClick={() => window.open(port.url)}
-                >
-                  View
-                </button>
+                <h4 className="tools">{port.tools}</h4>
+                <p className="description">{port.description}</p>
+                <div className="work-buttons">
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => window.open(port.url)}
+                  >
+                    See live
+                  </button>
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => window.open(port.source)}
+                  >
+                    See source
+                  </button>
+                </div>
               </div>
             </div>
           ))

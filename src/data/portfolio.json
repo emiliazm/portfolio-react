@@ -3,44 +3,56 @@
 
     {
       "cover": "/portfolio/bookit.png",
-      "title": "Book.it web app",
-      "description": "Ruby on rails",
-      "url": "https://bookit-api-be.herokuapp.com/api-docs/index.html"
+      "title": "Book.it API",
+      "tools": "Ruby on Rails / Swagger / Rspec / PostgreSql.",
+      "description": "The Book.it API is the back-end service for the Book.it application and it offers full user authentication and authorization capabilities.",
+      "url": "https://bookit-api-be.herokuapp.com/api-docs/index.html",
+      "source": "https://github.com/Danie12345/bookit-api-be"
     },
 
     {
       "cover": "/portfolio/budget.png",
       "title": "Budget web app",
-      "description": "Ruby on rails",
-      "url": "https://tranquil-oasis-26787.herokuapp.com/"
+      "tools": "Ruby on Rails / Devise / Rspec / PostgreSql.",
+      "description": "The Budget app is a mobile app that allows the user to manage his/her finacial transactions by categories.",
+      "url": "https://tranquil-oasis-26787.herokuapp.com/",
+      "source": "https://github.com/emiliazm/budget-app"
     },
 
     {
       "cover": "/portfolio/bookstore.png",
       "title": "Bookstore",
-      "description": "React & Redux",
-      "url": "https://emiliazm.github.io/bookstore/"
+      "tools": "React & Redux",
+      "description": "Bookstore is a single webpage created with React and redux that allow users to create a book collection.",
+      "url": "https://emiliazm.github.io/bookstore/",
+      "source": "https://github.com/emiliazm/bookstore"
     },
 
     {
       "cover": "/portfolio/ruby.png",
       "title": "Ruby project",
-      "description": "Ruby",
-      "url": "https://github.com/aliveGUY/ruby_capstone"
+      "tools": "Ruby",
+      "description": "It is console app that help user to keep a record of different types of things he won: books, music albums, and games. Data is stored in JSON files.",
+      "url": "https://github.com/aliveGUY/ruby_capstone",
+      "source": "https://github.com/aliveGUY/ruby_capstone"
     },
 
     {
       "cover": "/portfolio/metric.png",
       "title": "Metrics web app",
-      "description": "React and Redux",
-      "url": "https://emiliazm.github.io/metrics-webapp/"
+      "tools": "React and Redux",
+      "description": "Metrics-webapp is a single webpage created with React and Redux that allow users to get information about Covid cases by Continents.",
+      "url": "https://emiliazm.github.io/metrics-webapp/",
+      "source": "https://github.com/emiliazm/metrics-webapp"
     },
 
     {
       "cover": "/portfolio/filmer.png",
       "title": "Filmer app",
-      "description": "HTML, CSS & JS",
-      "url": "https://emiliazm.github.io/webapp/"
+      "tools": "HTML /  CSS / JS / Webpack / Jest",
+      "description": "Filmer is a website that gives you information about the latest films and shows.",
+      "url": "https://emiliazm.github.io/webapp/",
+      "source": "https://github.com/emiliazm/webapp"
     }
   ]
 }

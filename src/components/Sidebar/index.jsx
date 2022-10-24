@@ -77,7 +77,7 @@ const Sidebar = () => {
           <FontAwesomeIcon
             onClick={() => setShowNav(false)}
             icon={faClose}
-            color="#9E958B"
+            color="#9e958b"
             size="3x"
             className="close-icon"
           />
@@ -115,7 +115,7 @@ const Sidebar = () => {
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
-        color="#9E958B"
+        color="#9e958b"
         size="3x"
         className="hamburger-icon"
       />
