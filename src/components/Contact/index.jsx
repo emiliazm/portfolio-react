@@ -50,7 +50,17 @@ const Contact = () => {
           </h1>
           <p>
             I am interested in remote or relocation jobs.
-            Contact me if you have any requests or questions using the below form.
+            Contact me if you have any requests or questions using
+            <a className="font-color" href="https://www.linkedin.com/in/emiliazm/">
+              {' '}
+              Linkedin,
+            </a>
+            <a className="font-color" href="https://angel.co/u/emiliazm">
+              {' '}
+              AngelList
+              {' '}
+            </a>
+            or the below form.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
