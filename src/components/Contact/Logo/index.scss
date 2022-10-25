@@ -1,21 +1,20 @@
 .globe-container {
-  height: 100%;
-  position: absolute;
-  top: -30px;
-  right: 110px;
-  margin: auto;
+  height: 70%;
+  margin: 50px;
+  box-sizing: border-box;
   stroke-dasharray: 115000;
   stroke-dashoffset: 115000;
   animation: animationWorld 12s ease-in forwards;
+
+  .svg-globe-container {
+    margin: 100px;
+    stroke: #9e958b;
+    stroke-width: 50px;
+  }
 }
 
 @keyframes animationWorld {
   to {
     stroke-dashoffset: 0;
   }
-}
-
-.svg-globe-container {
-  stroke: #9e958b;
-  stroke-width: 50px;
 }

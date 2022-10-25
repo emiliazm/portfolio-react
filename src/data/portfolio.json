@@ -4,7 +4,7 @@
     {
       "cover": "/portfolio/bookit.png",
       "title": "Book.it API",
-      "tools": "Ruby on Rails / Swagger / Rspec / PostgreSql.",
+      "tools": "Ruby on Rails / Swagger / Rspec / PostgreSQL",
       "description": "The Book.it API is the back-end service for the Book.it application and it offers full user authentication and authorization capabilities.",
       "url": "https://bookit-api-be.herokuapp.com/api-docs/index.html",
       "source": "https://github.com/Danie12345/bookit-api-be"
@@ -13,7 +13,7 @@
     {
       "cover": "/portfolio/budget.png",
       "title": "Budget web app",
-      "tools": "Ruby on Rails / Devise / Rspec / PostgreSql.",
+      "tools": "Ruby on Rails / Devise / Rspec / PostgreSQL",
       "description": "The Budget app is a mobile app that allows the user to manage his/her finacial transactions by categories.",
       "url": "https://tranquil-oasis-26787.herokuapp.com/",
       "source": "https://github.com/emiliazm/budget-app"

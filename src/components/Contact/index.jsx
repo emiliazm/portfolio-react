@@ -60,7 +60,7 @@ const Contact = () => {
               AngelList
               {' '}
             </a>
-            or the below form.
+            or the form below.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -85,8 +85,8 @@ const Contact = () => {
 
           </div>
         </div>
+        <Logo />
       </div>
-      <Logo />
       <Loader type="ball-scale-multiple" />
     </>
   );

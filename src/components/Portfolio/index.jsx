@@ -25,6 +25,7 @@ const Portfolio = () => {
                 className="portfolio-image"
                 alt={port.title}
               />
+              <div className="overlay" />
               <div className="content">
                 <p className="title">{port.title}</p>
                 <h4 className="tools">{port.tools}</h4>
@@ -55,13 +56,22 @@ const Portfolio = () => {
   return (
     <>
       <div className="container portfolio-page">
-        <h1 className="page-title">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={'Portfolio'.split('')}
-            idx={15}
-          />
-        </h1>
+        <div className="text-zone">
+          <h1 className="title">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={'Portfolio'.split('')}
+              idx={15}
+            />
+          </h1>
+          <p>
+            If you are interested in
+            {' '}
+            <span className="font-color">my work,</span>
+            {' '}
+            you can check out some of my projects here.
+          </p>
+        </div>
         <div>{renderPortfolio(portfolioData.portfolio)}</div>
       </div>
       <Loader type="ball-scale-multiple" />

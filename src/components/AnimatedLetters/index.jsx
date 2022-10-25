@@ -9,7 +9,7 @@ const AnimatedLetters = (props) => {
   } = props;
 
   return (
-    <span>
+    <span className="title-span">
       {
         strArray.map((char, i) => (
           <span key={`${i + idx}`} className={`${letterClass} _${i + idx}`}>

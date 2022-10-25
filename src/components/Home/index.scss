@@ -1,9 +1,9 @@
 .home-page {
+  padding-top: 30px;
+
   .text-zone {
     position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
+    align-self: center;
     width: 40%;
     max-height: 90%;
   }
@@ -71,7 +71,7 @@ h2 {
   text-decoration: none;
   padding: 10px 18px;
   border: 1px solid #9e958b;
-  margin-top: 25px;
+  margin: 25px 10px 0 0;
   float: left;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
@@ -109,8 +109,8 @@ h2 {
       position: relative;
       width: 50px;
       height: auto;
-      top: 0;
-      left: -50px;
+      top: -45px;
+      left: -30px;
       right: 0;
       box-sizing: border-box;
       margin: auto;
