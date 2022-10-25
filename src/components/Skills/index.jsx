@@ -57,7 +57,7 @@ const Skills = () => {
             TDD, OOP, MVC.
           </p>
           <p>
-            <span className="font-color">Soft skills:</span>
+            <span className="font-color">Professional skills:</span>
             {' '}
             Teamwork, Time and Project management,
             Adaptability, Communication, Creativity, Pair-programming.
