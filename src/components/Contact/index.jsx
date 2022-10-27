@@ -18,7 +18,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
 
     emailjs
       .sendForm(
@@ -30,6 +29,7 @@ const Contact = () => {
       .then(
         () => {
           alert('Message sent, I will get back to you soon!');
+          window.location.reload(false);
         },
         () => {
           alert('An error occured, please try again');
